@@ -1,0 +1,677 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>#suggestions 09/07/2020</title><style>
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.highlight-default {
+}
+.highlight-gray {
+	color: rgb(155,154,151);
+}
+.highlight-brown {
+	color: rgb(100,71,58);
+}
+.highlight-orange {
+	color: rgb(217,115,13);
+}
+.highlight-yellow {
+	color: rgb(223,171,1);
+}
+.highlight-teal {
+	color: rgb(15,123,108);
+}
+.highlight-blue {
+	color: rgb(11,110,153);
+}
+.highlight-purple {
+	color: rgb(105,64,165);
+}
+.highlight-pink {
+	color: rgb(173,26,114);
+}
+.highlight-red {
+	color: rgb(224,62,62);
+}
+.highlight-gray_background {
+	background: rgb(235,236,237);
+}
+.highlight-brown_background {
+	background: rgb(233,229,227);
+}
+.highlight-orange_background {
+	background: rgb(250,235,221);
+}
+.highlight-yellow_background {
+	background: rgb(251,243,219);
+}
+.highlight-teal_background {
+	background: rgb(221,237,234);
+}
+.highlight-blue_background {
+	background: rgb(221,235,241);
+}
+.highlight-purple_background {
+	background: rgb(234,228,242);
+}
+.highlight-pink_background {
+	background: rgb(244,223,235);
+}
+.highlight-red_background {
+	background: rgb(251,228,228);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(55, 53, 47, 0.6);
+	fill: rgba(55, 53, 47, 0.6);
+}
+.block-color-brown {
+	color: rgb(100,71,58);
+	fill: rgb(100,71,58);
+}
+.block-color-orange {
+	color: rgb(217,115,13);
+	fill: rgb(217,115,13);
+}
+.block-color-yellow {
+	color: rgb(223,171,1);
+	fill: rgb(223,171,1);
+}
+.block-color-teal {
+	color: rgb(15,123,108);
+	fill: rgb(15,123,108);
+}
+.block-color-blue {
+	color: rgb(11,110,153);
+	fill: rgb(11,110,153);
+}
+.block-color-purple {
+	color: rgb(105,64,165);
+	fill: rgb(105,64,165);
+}
+.block-color-pink {
+	color: rgb(173,26,114);
+	fill: rgb(173,26,114);
+}
+.block-color-red {
+	color: rgb(224,62,62);
+	fill: rgb(224,62,62);
+}
+.block-color-gray_background {
+	background: rgb(235,236,237);
+}
+.block-color-brown_background {
+	background: rgb(233,229,227);
+}
+.block-color-orange_background {
+	background: rgb(250,235,221);
+}
+.block-color-yellow_background {
+	background: rgb(251,243,219);
+}
+.block-color-teal_background {
+	background: rgb(221,237,234);
+}
+.block-color-blue_background {
+	background: rgb(221,235,241);
+}
+.block-color-purple_background {
+	background: rgb(234,228,242);
+}
+.block-color-pink_background {
+	background: rgb(244,223,235);
+}
+.block-color-red_background {
+	background: rgb(251,228,228);
+}
+.select-value-color-default { background-color: rgba(206,205,202,0.5); }
+.select-value-color-gray { background-color: rgba(155,154,151, 0.4); }
+.select-value-color-brown { background-color: rgba(140,46,0,0.2); }
+.select-value-color-orange { background-color: rgba(245,93,0,0.2); }
+.select-value-color-yellow { background-color: rgba(233,168,0,0.2); }
+.select-value-color-green { background-color: rgba(0,135,107,0.2); }
+.select-value-color-blue { background-color: rgba(0,120,223,0.2); }
+.select-value-color-purple { background-color: rgba(103,36,222,0.2); }
+.select-value-color-pink { background-color: rgba(221,0,129,0.2); }
+.select-value-color-red { background-color: rgba(255,0,26,0.2); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="9f025ee6-7830-4cc8-9a09-a31df2aa7e17" class="page sans"><header><h1 class="page-title">#suggestions 09/07/2020</h1></header><div class="page-body"><p id="735d1f59-14ce-4186-944a-d19e1c2e658e" class=""><mark class="highlight-teal">Green </mark>= approved &amp; added to the server</p><p id="536f9b3a-3e1d-4d1e-999b-1872006ab900" class=""><mark class="highlight-yellow">Yellow </mark>= approved &amp; pending (yet to add)</p><p id="05aa74c8-60fd-4af5-884b-2b9500488cb0" class=""><mark class="highlight-pink">Pink </mark>= unsure, still deciding/need more feedback </p><p id="e2846c5b-712e-404c-b8f7-7f6a29d7bd9e" class=""><mark class="highlight-red">Red </mark>= denied </p><hr id="9d3d5a7f-eb39-4d5f-b77e-8bd68169afb7"/><p id="fb6630e4-df86-4a3f-9421-87babfbd93d8" class="">
+</p><p id="250bf801-3e61-41ef-9488-d0024112a181" class=""><mark class="highlight-red"><strong>Suggestion</strong></mark><strong>:</strong></p><p id="a3af7d6b-66f8-4f44-8574-2eb2237c2217" class="block-color-red">More wholesome emojis for reactions</p><p id="e4ccb91b-fb34-4253-ad42-e7f08b1176d0" class="block-color-red">Explanation:</p><p id="866b6881-e2e8-44d6-b130-3a5ab02c1c52" class="block-color-red">It would be nice to have some cute emojis from this server, the ones offered by Discord are not cute enough</p><p id="d6e7c44d-f7f2-473e-bc78-812fb5385385" class=""><strong>Stefffan</strong></p><p id="49608ee0-64ad-498b-9290-c70d7c26775e" class="">
+</p><p id="76b707c4-9971-45e7-8925-8792c458c185" class="">
+</p><p id="f0d5cbd4-7a20-4c04-97c4-d02d97c3d24b" class="block-color-red">Suggestion: <strong>#motivation </strong>could be viewed when studying.
+Explanation:
+Sometimes people start getting tired and don&#x27;t want to distract the others studying. If there was a way to see the motivational quotes or pictures, they can boost themselves back up.</p><p id="f734ff55-8895-46d4-a2d4-9be3d2681fec" class=""><strong>Peanuts</strong></p><p id="eb0a5422-a773-4f7b-864a-3bf04d50b68a" class="">
+</p><p id="518202c9-ccb7-4272-bf31-10248bcf8ae0" class=""><mark class="highlight-red">Also maybe Self-Roles should be available, so people can choose if to get these notifications without getting out of the call</mark></p><p id="f0d31d1e-0624-4783-a87b-9f9e1c64ba6e" class=""><strong>Stefffan</strong></p><p id="ad33f00c-e540-43d1-b9b1-846bfe47c6e9" class="">
+</p><p id="6701c9d5-a09e-451d-a39a-34fbe966e22f" class="">
+</p><p id="823f96a3-c22f-448d-9ce5-c9e42e2941ce" class=""><mark class="highlight-pink">**Suggestion:**
+Renovate colour of different study role
+**Explanation:**
+This is kind of a low priority,but the colour of grandmaster proficient and entry is kind of similar .Also may be we could use the gold silver/rainbow or karate belt colour scheme for this</mark></p><p id="e512babc-4c2e-484c-a23c-17ca05162a49" class=""><strong>Racky</strong></p><p id="4724739d-b52f-4c2d-ab12-ffc306b844f2" class="">
+</p><p id="5228bb89-dd5b-4631-bac9-1603902e7ec4" class=""><mark class="highlight-red">Suggestion: Changing the server location to somewhere else like europe, India or japan.
+Explanation: I live in India and most of the users are from Asia. So on changing the location we would get lower ping hence music bots in the voice calls would not lag. It causes irritation when the music lags.</mark></p><p id="7528fbd8-9fd6-462c-a826-9f71db649de9" class=""><strong>Bladed Angel</strong></p><p id="9e2f7f7a-cb5c-40a6-b692-c373f276efac" class="">
+</p><p id="576e6e5b-5344-4baf-b52d-266735135dba" class=""><mark class="highlight-pink">suggestion: study/relaxation music playlist chat (yes i know we have music bots but its for when we don&#x27;t know what songs to play etc) explanation: i mean i could put it under motivation or in the study chat but i feel like it&#x27;d feel outta place and not appropriate in that category and i&#x27;m always looking for peoples suggestions for their own or their own study playlists :leaves:</mark></p><p id="cd2ec35c-bb93-4a79-98d2-fef87103b728" class=""><strong>Ryn</strong></p><p id="d835e232-aa81-4166-a7ff-6db7d7a558f9" class="">
+</p><p id="0fb72442-7b85-4ff5-96d0-bbbec99b4b69" class="">
+</p><p id="03637528-0d66-4cc6-9a34-bcd6d7de7f0e" class="block-color-yellow"><strong>Suggestion:</strong></p><p id="2baa326a-005b-4520-a792-e0b07cbdbf20" class="block-color-yellow">an addition to the study sessions bot</p><p id="d25a49e9-5031-47de-bf57-a4f6415db39f" class="block-color-yellow"><strong>Explanation:</strong></p><p id="2449d26f-c3e3-4695-a20c-ea7a45bd7cf9" class="block-color-yellow"><mark class="highlight-yellow">I know this may be a far stretch but an addition that allows people to see the current and/or upcoming forest/cuckoo sessions with a command</mark></p><p id="bd0b06da-2560-48df-9b4a-2b313296d8c9" class=""><strong>Hannah</strong></p><p id="69d6d54d-6f17-4fb7-861a-708753fa3bf9" class="">
+</p><p id="c4e546f0-e8fe-4e3a-b337-445231bd959b" class="">
+</p><p id="b819e28e-dbcc-423e-a401-6b4009fd0f35" class="block-color-yellow"><strong>Suggestion:</strong></p><p id="f3d8cfcd-f6f4-4299-a80f-3321f5afa812" class="block-color-yellow">game night</p><p id="f3a14e39-06f7-4bec-bdc3-ad1115d4b9f7" class="block-color-yellow"><strong>Explanation:</strong></p><p id="139481bb-7694-471b-bb68-db54fb9534d2" class="block-color-yellow">maybe on the weekend we can have short game nights so some people can destress and maybe get to know more about eachother</p><p id="dcbc28ed-1165-44ac-b044-464a536ecc2a" class=""><strong>omaba bind conrol</strong></p><p id="10346e03-d467-4bae-be55-38144b090998" class="">
+</p><p id="412d13f4-6ad2-43e4-b2ea-bcb6cb786059" class="">
+</p><p id="88be2142-76ac-47a4-804d-a37cf0ef2f33" class="block-color-red"><strong>Suggestion:</strong></p><p id="550a1b73-0e60-4ea3-bf73-024723aa6ea7" class="block-color-red">For<strong>#looking-for-studybuddy</strong>, maybe find a way to show people who are still looking for a study buddy</p><p id="476feccc-6fb3-42ca-a9b7-4745a9680d01" class="block-color-red"><strong>Explanation:</strong></p><p id="49c7a12c-bd02-455f-bdab-b96f55d0eede" class="block-color-red">When I asked for one, I already assumed everybody else before me already found their study partners even though that&#x27;s most likely not true. Even if that&#x27;s not true, I didn&#x27;t want to message every single person until I found a study partner. It would be more efficient if you can already see the people who already found a study buddy and the people who are still looking for a study buddy.</p><p id="705883d2-06f7-4ef4-9b84-b0e5fce85f6f" class=""><strong>Sudowuko</strong></p><p id="2d4f1cec-8150-40db-9483-899474c8dce5" class="">
+</p><p id="2bb20588-7707-47c2-a4de-ce544ec050a9" class="">
+</p><p id="63fedf30-5cad-43ff-bdae-163e4e9e64c2" class="block-color-red"><strong>Suggestion:</strong></p><p id="da50138f-3624-434a-bda4-ef9d36034729" class="block-color-red">Long term goals should be under my to do list so you can access it while in study calls</p><p id="3bc8f6c0-f6bd-45c6-8643-48f3185db54d" class="block-color-red"><strong>Explanation:</strong></p><p id="51d4e210-8888-4c38-864d-80dbd26304af" class="block-color-red">I understand that you don&#x27;t check off long term goals as often as day goals but if I complete a long term goal, I feel like I shouldn&#x27;t have to leave the study call I&#x27;m in just to check it off. Also long-term goals are still technically part of your to do list so I think this suggestion makes sense.</p><p id="3bf820da-ed3a-492c-9502-b1f9de428d26" class=""><strong>Sudowuko</strong></p><p id="a3bd915c-b70e-4b46-b4b0-59e26d1a9540" class="">
+</p><p id="6e00f387-7b78-4618-bb2c-3e85b53f7d1e" class="">
+</p><p id="ad9a7e09-6f6e-4e63-87eb-1143a48e5c53" class=""><mark class="highlight-pink"><strong>Suggestion:</strong></mark><mark class="highlight-pink"> Add an option to opt into auto accountability when screensharing/camera calls
+</mark><mark class="highlight-pink"><strong>Suggestion 2:</strong></mark><mark class="highlight-pink"> Allow users to change the time when the auto accountability bot reminds them
+</mark><strong>Explanation:</strong> People (I) lose focus in screensharing/camera calls also. Plus the chat doesn&#x27;t seem active enough to call people out when there&#x27;s inactivity/no studying
+<mark class="highlight-red"><strong>Explanation 2:</strong></mark><mark class="highlight-red"> More variability than 25 and 50 min poms. Also for people in screensharing/camera calls
+</mark>Forgive my terminology, I&#x27;m new to Discord</p><p id="c7455485-4711-4da4-b2bc-45cfc5c21371" class=""><strong>unequivocably_a_bean</strong></p><p id="0c305b0d-2a27-42e8-b324-abb1a0269832" class="">
+</p><p id="da4e3d4a-07df-4338-875c-346160b672e5" class="">
+</p><p id="99fb3271-a43f-43db-9bde-1dd6a4a49bf0" class="block-color-red"><strong>Suggestion:</strong></p><p id="a9891ee4-c693-4319-b568-dd0c255f953f" class="block-color-red">Reset the last 24h hours timer in the !me command at 3:00 am local time of the user.</p><p id="a115619d-a9d6-4902-809a-c9399dcb843a" class="block-color-red"><strong>Explanation:</strong></p><p id="936aeab9-4fbe-4c5c-8671-98c1acd819da" class="block-color-red">I an unable to trace the hours I studies in a day as in my local time the study time of past 24h reduces significantly at 10 am (indicating that the time resets at that time. Plus by resetting at 3am we could accommodate the night owls. (I am in GMT +5:30 hours time zone). I know that for this everyone has to set the timezone. For the users with no time zone you can leave it as it is for them</p><p id="a403eaba-8ba9-478e-9a21-2357cb348c7c" class=""><strong>Bladed Angel</strong></p><p id="c8300156-1e30-4bcc-b720-30497f886cff" class="">
+</p><p id="7109d12e-5a23-4b96-b197-441076ec617e" class="">
+</p><p id="b0145683-b8b1-42e4-a789-f57acda40b3a" class="block-color-red"><em><strong>SUGGESTION</strong></em></p><p id="60631968-7f2b-424d-bbea-57e93ba70145" class="block-color-red">: a stationery/bujo channel?</p><p id="397f4e39-c37d-4287-9c6a-f28b1edff256" class="block-color-red"><em><strong>EXPLANATION</strong></em></p><p id="dfbdbd13-2bab-43c7-9134-b95dbf5639ae" class="block-color-red">: not certain if others would support this/if it wouldn&#x27;t be welcome on the server, but i would love a channel where we can swap tips and share our bullet journal layouts, printables, stationery and other fun ways we get organized!</p><p id="642c62f7-7309-42b9-a6b7-46e237c709c2" class=""><strong>Tetris</strong></p><p id="2ae623af-7dab-4658-9ab7-159bcef37941" class="">
+</p><p id="a3388ded-4ad1-44eb-be1c-ffc73c116c2e" class=""><mark class="highlight-red">hii !!! could u pl increase the size of group 1 ?i wanted to make it look big to attract more attention but thats all i got hh</mark></p><p id="d720c09e-c307-45d0-a725-3ce59b631f72" class=""><strong>TramBot</strong></p><p id="119dc469-5c52-4e39-9617-2cc5eea7d0c6" class="">
+</p><p id="5103f94a-38f0-44d8-ab86-9d0e3c267d63" class="">
+</p><p id="f98bc7bf-2e24-499a-ae88-6920deab1a11" class="block-color-pink"><strong>Suggestion</strong></p><p id="2862313a-7b64-43c7-8189-e8989fd94cb3" class="block-color-pink"><mark class="highlight-pink">: add a means for users -- who wish to study but may be quite sleepy -- to be auto-logged-off after say 1 hour (in case they were to fall asleep), requiring them to actively re-logon if they are still awake.</mark></p><p id="c3cb9fa7-f822-452d-b013-15d1923f6a2d" class="block-color-pink"><strong>Explanation</strong></p><p id="adc98db6-6034-48f4-b8f2-4741a5d780da" class="block-color-pink">: This capability helps with late-night pushes by studiers (esp. in the screenshare/camera group), and prevents the need for a server moderator to actively disconnect an AFK user. Also, such users may wish to study in a sleep-risk condition but would <em>hate </em>to be incorrectly perceived as using the while-asleep logged hours to boost leaderboard rankings. Implementation options could be a specialized room that disconnects users connected after a specified continuous duration.</p><p id="43dfe94e-1052-4b88-9f81-ea8db06fde92" class=""><strong>Targivore</strong></p><p id="efc09c93-a428-4f69-8ed5-3bc02e51517f" class="">
+</p><p id="a205fdd9-0a7f-4fbb-9872-97b10f87ae46" class=""><mark class="highlight-pink">Should we have a movie and song recommendation section?</mark></p><p id="3a91e37a-f43f-452a-b34c-b4a1e3088a02" class=""><strong>Ozera</strong></p><p id="ead892a1-571f-49bc-aa56-5b0db558d0d4" class="">
+</p><p id="5d71f1d7-d984-44bc-b051-d81ddeb9c82d" class="">
+</p><p id="77010fe1-ad82-4045-a7f8-0953282890c4" class=""><mark class="highlight-red">Suggestion: convert how much time we&#x27;ve spent studying in past 24 hours, to how much time we&#x27;ve spent studying today, in which we can set when we want the day to reset. So if I want my day to reset at 3am, I convert whatever that time is in my time zone to UTC, for consistency&#x27;s sake.
+Explanation: With the 24 hour system, it feels like you&#x27;re playing catch up with yesterday (to maintain the same no throughout the whole day).</mark></p><p id="2fdff1db-7d69-482d-83e2-13052cd837ef" class=""><strong>unequivocably_a_bean</strong></p><p id="54396871-a4b2-4bac-894e-50cbb9b128a3" class="">
+</p><p id="283a26a3-8829-4f50-990f-4a7e1c05a35a" class="">
+</p><p id="0cb89e7d-e457-4e1e-be8e-a1b4c9aaae5e" class=""><strong>Suggestion:</strong></p><p id="effa9d39-a5db-4c14-b9e9-d7d19e40db14" class="block-color-red">Remove &gt;play +play -play .... bots and turn them into some Study!Music bots (like ones in chill chats) to make them available for study calls</p><p id="282f21e2-2ecc-412f-9008-793f34b8135f" class="block-color-red"><strong>Explanation:</strong></p><p id="b0f19471-4f80-4458-9651-5026fc440a60" class="block-color-red">I think using &gt;play +play -play bots generates more distraction (playlist managment) than automatics bots and study time doesn&#x27;t count in chill channels</p><p id="bcec2cf4-1b3b-4223-afb7-156645eacc88" class=""><strong>Aurel</strong></p><p id="335b1393-db5c-4369-bea4-9ce014327e65" class="">
+</p><p id="781ee761-51bd-48ab-bd80-3081e8b6e3e6" class="">
+</p><p id="97fdf534-9c3d-4128-b092-f9133b0dc704" class=""><mark class="highlight-pink"><strong>Suggestion:</strong></mark><mark class="highlight-pink">
+The chance for people to share their knowledge, work, and talk about themselves
+</mark><mark class="highlight-pink"><strong>Explanation:</strong></mark><mark class="highlight-pink">
+This community is full of amazing people from different backgrounds and of various skill levels. I don&#x27;t know if it would work, but it would be nice to have a shared calendar where people can book a space in which they can have a channel where they talk about something that they want to share with others. I think it would be a good opportunity to practice presentation skills for the speaker and gain more knowledge to the listeners, and uniting the community even more!</mark></p><p id="a0d189fb-2e39-4188-8628-c2910bf94676" class=""><strong>Stefffan</strong></p><p id="3a776d88-7c7e-4c01-943e-e02ca857e3fe" class="">
+</p><p id="68006dfe-0270-45be-986b-f7a04496d603" class="">
+</p><p id="f194f81b-f89c-4c38-a953-7a5b64b6f187" class="block-color-red">Suggestion: I wonder if there would be a clearer way to organize the study buddy channel. Ex: People listing only a few key points like time zone, age/degree/grade, and a few key things they&#x27;re looking for in their buddy.
+Explanation: I don&#x27;t use the channel, but just from looking in every now and then, the submissions seem to be really long. I imagine that trying to skim through a lot of them would be tedious and hard to keep track of who wants what. If people posted smaller messages, they could dm eachother about details to see if it could work out, and it seems like it&#x27;d be easier to find someone that way</p><p id="d5a3c0a7-15fb-4415-b774-a8df852d64c2" class=""><strong>pikachushaft</strong></p><p id="33b2d844-0549-4c96-b5ed-2abcedb52170" class="">
+</p><p id="bd5c2ef3-5416-4314-9a00-7ce5662c5abc" class="">
+</p><p id="2750cc5e-8abd-48ad-881f-073dfcb3b250" class=""><mark class="highlight-pink">Suggestion: A channel with the 25-5 Time announcer bot (and another one with the 50-10) AND mandatory cam / screenshare.
+Explanation: Right now the only channel with mandatory cam-screenshare is kind of unsynced between the students since everyone is following their own schedule. I think it would benefit having a room where, in addition to the cam-screenshare, we have the time announcer which will give a &quot;schedule&quot; for all the students in the room. Also I think, but I&#x27;m no expert, would be fairly easy to implement! Thanks anyway for all your work!</mark></p><p id="b7aad1bb-fbb0-4c2b-832b-680a62e19f2c" class=""><strong>Enan </strong></p><p id="b8e17c50-d497-49e2-9707-d7804a3e4ba6" class="">
+</p><p id="667d6733-69a4-4d81-abe2-01ab17039336" class=""><mark class="highlight-pink">I don&#x27;t know if this kind of channel already exists here (if there is please enlighten me), but can we have a channel where people can share something that amazed them with what they were studying :) I feel like it can make someone remember something better.</mark></p><p id="cd10fa9b-44ea-4833-bca0-90cb03884b6b" class=""><strong>_olives</strong></p><p id="b8303e4d-9bf7-419f-b8ed-5dee0ecbfdc3" class="">
+</p><p id="cb9d6170-3e5a-4330-9db8-0f7d24f26c66" class=""><mark class="highlight-red">suggestion : i feel like it would be nice if the &quot;motivation&quot; channel was visible for people who are studying , like, we could take a lil peak whenever we need something uplifting :sparkles:</mark></p><p id="6ad36306-b257-40ea-ad89-1fd5f54aa420" class=""><strong>amel</strong></p><p id="19baeddc-526d-4c80-97f2-7317d33a5659" class="">
+</p></div></article></body></html>
